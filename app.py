@@ -3,15 +3,6 @@ import pandas as pd
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 
-page_bg_img = """
-<style>
-[data_testid = "stAppViewContainer"]{
-background-image: url("crop.jpg");
-background-size: cover;
-}
-</style>
-"""
-
 df = pd.read_csv('Crop_recommendation.csv')
 X = df.iloc[:, :-1].values
 y = df.iloc[:, -1].values
